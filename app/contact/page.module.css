@@ -1,0 +1,237 @@
+.label {
+  display: block;
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--gold);
+  margin-bottom: 10px;
+}
+
+.sectionTitle {
+  margin-bottom: 32px;
+  font-family: var(--serif);
+  font-weight: 700;
+  font-size: clamp(36px, 5vw, 56px);
+  line-height: 1.05;
+  color: var(--cream);
+}
+
+/* ---------- details ---------- */
+
+.details {
+  padding: 80px 0;
+  border-bottom: 1px solid var(--line);
+}
+
+.detailsInner {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 56px;
+}
+
+.info {
+  flex: 1 1 400px;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.address {
+  display: block;
+  font-family: var(--serif);
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.15;
+  color: var(--cream);
+}
+
+.hint {
+  display: block;
+  margin-top: 12px;
+  color: var(--muted);
+}
+
+.channels {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px 56px;
+}
+
+.bigLink {
+  display: flex;
+  align-items: center;
+  min-height: 44px;
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.fax {
+  display: block;
+  color: var(--muted);
+  font-size: 15px;
+}
+
+.socials {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.socials a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 48px;
+  padding: 0 var(--gutter);
+  border: 1px solid var(--line-soft);
+  font-weight: 600;
+}
+
+.socials a:hover {
+  border-color: var(--gold);
+}
+
+.notice {
+  padding: 20px 24px;
+  border: 1px solid var(--gold);
+  color: var(--gold-light);
+}
+
+.photo {
+  flex: 1 1 400px;
+  min-width: 0;
+}
+
+.photo img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+}
+
+.caption {
+  margin-top: 12px;
+  font-size: 15px;
+  color: var(--muted);
+}
+
+/* ---------- map ---------- */
+
+.mapSection {
+  padding: clamp(56px, 6vw, 80px) 0;
+  border-bottom: 1px solid var(--line);
+}
+
+.map {
+  position: relative;
+  overflow: hidden;
+  min-height: 440px;
+  background: var(--panel-deep);
+  border: 1px solid var(--line);
+}
+
+.mapArt {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.mapContent {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+  align-items: stretch;
+  justify-content: space-between;
+  min-height: 440px;
+  padding: clamp(20px, 3vw, 40px);
+}
+
+.mapCard {
+  align-self: flex-start;
+  flex: 0 1 380px;
+  min-width: 0;
+  background: var(--night);
+  border: 1px solid var(--gold);
+  padding: 28px;
+}
+
+.mapCardAddress {
+  display: block;
+  font-family: var(--serif);
+  font-size: 26px;
+  font-weight: 600;
+  line-height: 1.2;
+  color: var(--cream);
+}
+
+.mapButton {
+  margin-top: 20px;
+  min-height: 52px;
+  padding: 0 28px;
+}
+
+.pin {
+  flex: 1 1 200px;
+  min-width: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mapNote {
+  margin-top: 12px;
+  font-size: 14px;
+  color: var(--muted);
+}
+
+/* ---------- seating ---------- */
+
+.seatingSection {
+  padding: 80px 0;
+}
+
+.seating {
+  min-height: 260px;
+  background: var(--panel);
+  border: 1px solid var(--line);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 24px;
+  color: var(--muted);
+}
+
+/* ---------- evening band ---------- */
+
+.band {
+  position: relative;
+  height: clamp(260px, 38vw, 520px);
+  background: var(--night-deep);
+  overflow: hidden;
+}
+
+.bandPhoto {
+  position: absolute;
+  inset: 0;
+  -webkit-mask-image: linear-gradient(to bottom, transparent 0%, #000 28%, #000 78%, transparent 100%);
+  mask-image: linear-gradient(to bottom, transparent 0%, #000 28%, #000 78%, transparent 100%);
+}
+
+.bandPhoto img {
+  object-fit: cover;
+  object-position: 50% 55%;
+}
+
+.bandText {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 20px;
+  text-align: center;
+  font-family: var(--serif);
+  font-size: clamp(20px, 2.4vw, 30px);
+  font-weight: 600;
+  color: var(--cream);
+}

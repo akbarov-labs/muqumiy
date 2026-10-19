@@ -1,0 +1,56 @@
+.section {
+  padding: 64px 0 96px;
+}
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 48px 32px;
+}
+
+.album {
+  flex: 1 1 320px;
+  min-width: 0;
+  display: block;
+}
+
+.album img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+}
+
+.album:first-child {
+  flex: 2 1 640px;
+}
+
+.album:first-child img {
+  aspect-ratio: 16 / 9;
+}
+
+.title {
+  display: block;
+  margin-top: 16px;
+  font-family: var(--serif);
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 1.15;
+  color: var(--cream);
+}
+
+.album:hover .title {
+  color: var(--gold-light);
+}
+
+.meta {
+  display: block;
+  margin-top: 4px;
+  font-size: 14px;
+  color: var(--muted);
+}
+
+.note {
+  margin-top: 64px;
+  text-align: center;
+}

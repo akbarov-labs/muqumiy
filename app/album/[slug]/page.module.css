@@ -1,0 +1,90 @@
+.intro {
+  padding: clamp(32px, 4vw, 56px) 0 clamp(24px, 3vw, 40px);
+}
+
+.back {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  font-weight: 600;
+  color: var(--gold);
+}
+
+.intro h1 {
+  margin-top: 16px;
+  font-family: var(--serif);
+  font-size: clamp(40px, 6vw, 84px);
+  line-height: 0.98;
+  font-weight: 700;
+  color: var(--cream);
+}
+
+.meta {
+  margin-top: 20px;
+  font-size: 16px;
+  color: var(--muted);
+}
+
+.gallerySection {
+  padding-bottom: clamp(56px, 6vw, 88px);
+}
+
+.gallery {
+  columns: 3 300px;
+  column-gap: 16px;
+}
+
+.photo {
+  display: block;
+  break-inside: avoid;
+  margin: 0 0 16px;
+}
+
+.photo img {
+  width: 100%;
+  height: auto;
+}
+
+.note {
+  margin-top: 16px;
+}
+
+.pagerSection {
+  border-top: 1px solid var(--line);
+  padding: clamp(40px, 5vw, 64px) 0 clamp(56px, 6vw, 88px);
+}
+
+.pagerInner {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px 48px;
+  justify-content: space-between;
+}
+
+.pagerLink {
+  flex: 1 1 280px;
+  display: block;
+}
+
+.next {
+  text-align: right;
+}
+
+.pagerLabel {
+  display: block;
+  font-size: 14px;
+  color: var(--muted);
+}
+
+.pagerTitle {
+  display: block;
+  margin-top: 4px;
+  font-family: var(--serif);
+  font-size: 28px;
+  font-weight: 600;
+  color: var(--cream);
+}
+
+.pagerLink:hover .pagerTitle {
+  color: var(--gold-light);
+}

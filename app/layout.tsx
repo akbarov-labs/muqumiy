@@ -20,13 +20,21 @@ export const metadata: Metadata = {
     template: "%s · Муқимий театри",
   },
   description:
-    "Муқимий номидаги Ўзбекистон давлат академик мусиқали театри: репертуар, спектакллар, янгиликлар ва алоқа.",
+    "Муқимий театри сайти учун концепт дизайн (Akbarov Labs). Театрнинг расмий сайти эмас.",
+  robots: { index: false, follow: false },
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html lang="uz-Cyrl" className={`${serif.variable} ${sans.variable}`}>
       <body>
+        <p className="concept-note">
+          Концепт дизайн:{" "}
+          <a href="https://akbarovlabs.uz" target="_blank" rel="noopener">
+            Akbarov Labs
+          </a>
+          . Бу Муқимий театрининг расмий сайти эмас.
+        </p>
         <SiteHeader />
         <main>{children}</main>
         <SiteFooter />

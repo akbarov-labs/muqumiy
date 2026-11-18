@@ -2,7 +2,7 @@
 
 A redesign concept for the website of the Muqimiy theatre in Tashkent, built by [Akbarov Labs](https://akbarovlabs.uz).
 
-**Live demo:** https://muqumiy-orcin.vercel.app
+**Live demo:** https://muqumiy-concept.vercel.app
 
 This is a concept, not the theatre's official website. It is not affiliated with or endorsed by the theatre.
 

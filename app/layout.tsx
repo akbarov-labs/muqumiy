@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Manrope, Noto_Serif_Display } from "next/font/google";
+import { ConceptNotice } from "@/components/ConceptNotice";
 import { SiteFooter } from "@/components/SiteFooter";
 import { SiteHeader } from "@/components/SiteHeader";
 import "./globals.css";
@@ -27,6 +28,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html lang="uz-Cyrl" className={`${serif.variable} ${sans.variable}`}>
       <body>
+        <ConceptNotice />
         <SiteHeader />
         <main>{children}</main>
         <SiteFooter />

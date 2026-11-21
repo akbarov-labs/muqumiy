@@ -178,6 +178,29 @@ p {
   text-align: center;
 }
 
+/* ---------- concept notice ---------- */
+
+/* Cream on the night ground so it reads as a note from outside the design, not part of it. */
+.concept-notice {
+  background: var(--cream);
+  color: var(--paper-ink);
+}
+
+.concept-notice .container {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  font-size: 14px;
+  line-height: 1.45;
+  text-align: center;
+}
+
+.concept-notice a {
+  color: var(--paper-accent);
+  font-weight: 600;
+  text-decoration: underline;
+  text-underline-offset: 0.2em;
+}
+
 /* ---------- utility bar + header ---------- */
 
 .utility-bar {
